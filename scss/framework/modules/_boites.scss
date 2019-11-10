@@ -1,0 +1,57 @@
+/*
+  ./scss/framework/modules/_boites.scss
+  Module des boites
+ */
+
+/* Types de boîtes */
+  .boite-fixe {
+    width: 100%;
+    max-width: $largeurBoiteFixe;
+    margin: auto;
+  }
+
+  .boite-marge-nulle {
+    margin: 0;
+  }
+
+/* Bordures */
+  .boite-bords {
+    /*margin: 0;*/
+    padding: $paddingBoite;
+    border: $couleurBordsBoite $tailleBordsBoite solid;
+  }
+
+/* Couleurs */
+  .boite-couleur1{
+    background: $couleur1;
+    padding:$paddingBoite;
+    color:#fff;
+  }
+  .boite-couleur2{
+    background: $couleur2;
+    padding: $paddingBoite;
+    color:#fff;
+  }
+  .boite-couleurNeutre{
+    background: $couleurNeutre;
+    padding: $paddingBoite;
+    color:#fff;
+  }
+
+
+
+
+/* Boites flottantes */
+  .boite-flottante-gauche {
+    float: left;
+    margin: 0 $paddingBoite $paddingBoite 0;
+  }
+  .boite-flottante-droite {
+    float: right;
+    margin: 0 0 $paddingBoite $paddingBoite;
+  }
+  .boite-clearfix:after {
+    content:'';
+    display: block;
+    clear: both;
+  }

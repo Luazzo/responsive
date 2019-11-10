@@ -1,0 +1,49 @@
+/*
+  .scss/framework/_variables.scss
+  Variables du framework
+ */
+
+/* COULEURS */
+  $couleur1: #10870e;
+  $couleur1Claire: lighten($couleur1, 30%);
+  $couleur1Foncee: darken($couleur1, 30%);
+
+  $couleur2: #db1a1d;
+  $couleur2Claire: lighten($couleur2, 30%);
+  $couleur2Foncee: darken($couleur2, 30%);
+
+  $couleurNeutre: #6d6d6d;
+  $couleurNeutreClaire: lighten($couleurNeutre, 30%);
+  $couleurNeutreFoncee: darken($couleurNeutre, 30%);
+
+/* DIMENSIONS */
+  $largeurBoiteFixe: 800px;
+  $tailleGrand:      2rem;
+  $tailleNormal:     1.3rem;
+  $taillePetit:      .8rem;
+
+/* MENUS */
+  $menuPadding: .5rem;
+  $menuCouleurOff: #000;
+  $menuCouleurTexteOff: #999;
+  $menuCouleurOn: #333;
+  $menuCouleurTexteOn: #fff;
+
+/* MENUS PAGINATION */
+  $paginationAlignement: center;
+  $paginationDimension: 2rem;
+  $paginationCouleurOff: #fff;
+  $paginationCouleurTexteOff: $couleurNeutre;
+  $paginationCouleurBordsOff: $couleurNeutre;
+  $paginationCouleurOn: $couleur1;
+  $paginationCouleurTexteOn: #fff;
+  $paginationCouleurBordsOn: $couleur1;
+
+/* BOITES */
+  $paddingBoite: .8rem;
+  $tailleBordsBoite: 1px;
+  $couleurBordsBoite: #666;
+
+/* GRILLES */
+  $nbreColonnesGrille: 12;
+  $gouttiereGrille: 0.5rem;

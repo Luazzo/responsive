@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* ----------------------------------------------------
+   VARIABLES
+   ----------------------------------------------------
+*/
+/*
+  .scss/framework/_variables.scss
+  Variables du framework
+ */
+/* COULEURS */
+/* DIMENSIONS */
+/* MENUS */
+/* MENUS PAGINATION */
+/* BOITES */
+/* GRILLES */
+/* ----------------------------------------------------
+   SPECIFICATIONS GENERALES (valeurs par d├®faut)
+   ----------------------------------------------------
+*/
+body {
+  color: #6d6d6d;
+  font-family: Verdana, arial, sans-serif; }
+
+main div {
+  background: orange;
+  color: #fff;
+  padding: 1em;
+  text-align: center; }
+
+article figure {
+  height: 7em; }
+
+/* ----------------------------------------------------
+   OBJETS PARTICULIERS
+   ----------------------------------------------------
+*/
+#slider {
+  height: 10em; }
+
+#entetePrincipal {
+  margin-bottom: 0.5rem; }
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,37 @@
+/*
+  ./scss/framework/modules/_contenus.scss
+  Module des contenus
+ */
+
+  /* Alignement des contenus */
+    .contenu-centre {
+      text-align:center;
+    }
+    .contenu-gauche {
+      text-align:left;
+    }
+    .contenu-droite {
+      text-align:right;
+    }
+    .contenu-justifie {
+      text-align:justify;
+    }
+
+  /* Tailles de contenus */
+    .contenu-grand {
+      font-size: $tailleGrand;
+    }
+    .contenu-normal {
+      font-size: $tailleNormal;
+    }
+    .contenu-petit {
+      font-size: $taillePetit;
+    }
+
+  /*AFFICHAGE DES CONTENUS*/
+    .contenu-cache {
+      display: none;
+    }
+    .contenu-inline > * {
+      display: inline-block;
+    }

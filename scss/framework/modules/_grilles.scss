@@ -1,0 +1,86 @@
+/*
+  ./scss/framework/modules/_grilles.scss
+  Module des grilles
+ */
+
+ * {
+   box-sizing: border-box;
+ }
+
+.grille-g {
+  display: flex;
+  flex-wrap:wrap;
+  margin: -$gouttiereGrille;
+  > * {
+    margin: $gouttiereGrille;
+    flex-basis: calc(100% - (2 * #{$gouttiereGrille}));
+  }
+}
+
+
+
+/* Pour les écrans XS et au-delà (à partir de 0px) */
+  @media screen and (min-width: 0px){
+      @for $i from 1 through $nbreColonnesGrille {
+        .xs#{$i} {
+            flex-basis: calc(
+                   (100% * #{$i} / #{$nbreColonnesGrille})
+                         - (2 * #{$gouttiereGrille})
+            );
+        }
+      }
+  }
+
+  /*@media only screen and (max-width: 480px) {
+        article p {
+            display: none;
+        }
+    }*/
+
+  /* Pour les écrans S et au-delà (à partir de 480px) */
+    @media screen and (min-width: 480px){
+        @for $i from 1 through $nbreColonnesGrille {
+          .s#{$i} {
+              flex-basis: calc(
+                     (100% * #{$i} / #{$nbreColonnesGrille})
+                           - (2 * #{$gouttiereGrille})
+              );
+          }
+        }
+    }
+
+    /* Pour les écrans M et au-delà (à partir de 768px) */
+      @media screen and (min-width: 768px){
+          @for $i from 1 through $nbreColonnesGrille {
+            .m#{$i} {
+                flex-basis: calc(
+                       (100% * #{$i} / #{$nbreColonnesGrille})
+                             - (2 * #{$gouttiereGrille})
+                );
+            }
+          }
+      }
+
+/* Pour les écrans L et au-delà (à partir de 992px) */
+  @media screen and (min-width: 992px){
+      @for $i from 1 through $nbreColonnesGrille {
+        .l#{$i} {
+            flex-basis: calc(
+                   (100% * #{$i} / #{$nbreColonnesGrille})
+                         - (2 * #{$gouttiereGrille})
+            );
+        }
+      }
+  }
+
+  /* Pour les écrans XL et au-delà (à partir de 1200px) */
+    @media screen and (min-width: 1200px){
+        @for $i from 1 through $nbreColonnesGrille {
+          .xl#{$i} {
+              flex-basis: calc(
+                     (100% * #{$i} / #{$nbreColonnesGrille})
+                           - (2 * #{$gouttiereGrille})
+              );
+          }
+        }
+    }

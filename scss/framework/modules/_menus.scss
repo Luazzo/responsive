@@ -1,0 +1,57 @@
+/*
+  ./scss/framework/modules/_menus.scss
+  Module des menus
+ */
+
+/* Menu horizontal */
+  .menu-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .menu-horizontal > ul > li {
+    display: inline-block;
+  }
+  .menu-horizontal a {
+    background: $menuCouleurOff;
+    padding: $menuPadding;
+    color:$menuCouleurTexteOff;
+    text-decoration: none;
+  }
+  .menu-horizontal a:hover,
+  .menu-horizontal li.actif a,
+  .menu-horizontal a.actif {
+    background: $menuCouleurOn;
+    color: $menuCouleurTexteOn;
+  }
+
+/* Menu pagination */
+
+  .menu-pagination {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: $paginationAlignement;
+    a {
+      display: block;
+      border-top: $paginationCouleurBordsOff 1px solid;
+      border-bottom: $paginationCouleurBordsOff 1px solid;
+      border-right: $paginationCouleurBordsOff 1px solid;
+      width: $paginationDimension;
+      line-height: $paginationDimension;
+      text-align: center;
+      background: $paginationCouleurOff;
+      color: $paginationCouleurTexteOff;
+    }
+    li:first-child a {
+      border-left: $paginationCouleurBordsOff 1px solid;
+    }
+    li.actif a,
+    li:first-child.actif a,
+    li:first-child a:hover,
+    a:hover {
+      background: $paginationCouleurOn;
+      border-color: $paginationCouleurBordsOn;
+      color: $paginationCouleurTexteOn;
+    }
+  }

@@ -1,0 +1,29 @@
+/*
+  ./scss/framework/modules/_visibilites.scss
+  Module des visibilités
+ */
+
+/* xs-cache, s-visible */
+
+.xs-cache{
+  display:none;
+}
+.xs-visible{
+  display:block;
+}
+
+.s-visible{
+  display:none;
+}
+@media screen and (min-width:480px){
+  .s-cache{
+    display:none;
+  }
+}
+@media screen and (min-width:480px){
+  .s-visible{
+    display:block;
+  }
+}
+
+/* .m-visible, .l-visible, .xl-visible */

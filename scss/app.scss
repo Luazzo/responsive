@@ -1,0 +1,44 @@
+//
+// ./scss/app.scss
+//
+
+/* ----------------------------------------------------
+   VARIABLES
+   ----------------------------------------------------
+*/
+@import "framework/variables";
+
+/* ----------------------------------------------------
+   SPECIFICATIONS GENERALES (valeurs par défaut)
+   ----------------------------------------------------
+*/
+
+  body {
+    color:$couleurNeutre;
+    font-family: Verdana, arial, sans-serif;
+  }
+
+  main div {
+    background: orange;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+
+  article figure{
+    height:7em;
+  }
+
+
+
+  /* ----------------------------------------------------
+     OBJETS PARTICULIERS
+     ----------------------------------------------------
+  */
+  #slider{
+    height:10em;
+  }
+
+  #entetePrincipal{
+    margin-bottom: 0.5rem;
+  }
